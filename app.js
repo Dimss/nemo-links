@@ -23,5 +23,5 @@ app.use('/', router);
 app.use(middlewares.responseSenderMiddleware);
 // Default error handler
 app.use(middlewares.errorHandlerMiddleware);
-app.listen(conf.listenPort, '0.0.0.0', () => log.info(`Kidi API listening on port ${conf.listenPort}`));
+app.listen(conf.listenPort, '0.0.0.0', () => log.info(`Nemo links API listening on port ${conf.listenPort}`));
 log.info(`Runtime profile: ${process.env.PROFILE}`);
