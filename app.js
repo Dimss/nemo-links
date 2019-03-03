@@ -33,8 +33,8 @@ const connectWithRetry = () => {
       setTimeout(connectWithRetry, 5000)
     })
   }
-  
-connectWithRetry()
+
+// connectWithRetry()
 
 app.use(middlewares.requestInitializerMiddleware);
 app.use(bodyParser.json());
