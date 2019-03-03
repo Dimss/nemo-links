@@ -9,7 +9,7 @@ const os = require("os");
 exports.getInfo = function(req, res, next) {
   log.info(req.body);
   res.payload = {
-    version: "0.1",
+    version: "0.2",
     hostname: os.hostname()
   }
   next();
