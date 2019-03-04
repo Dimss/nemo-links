@@ -34,7 +34,7 @@ const connectWithRetry = () => {
     })
   }
 
-// connectWithRetry()
+connectWithRetry()
 
 app.use(middlewares.requestInitializerMiddleware);
 app.use(bodyParser.json());
