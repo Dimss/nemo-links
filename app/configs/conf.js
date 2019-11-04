@@ -6,7 +6,7 @@ const devConf = {
 };
 
 const prodConf = {
-    db: `mongodb://${env.MONGODB_USER}:${evn.MONGODB_PASSWORD}@mongo-links:27017/${MONGODB_DATABASE}`,
+    db: `mongodb://${process.env.MONGODB_USER}:${process.evn.MONGODB_PASSWORD}@mongo-links:27017/${process.env.MONGODB_DATABASE}`,
     listenPort: 8080,
     jwtSecret: 'secret',
 };
